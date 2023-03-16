@@ -6,7 +6,7 @@ On the home page the user will be able to choose between five different categori
 
 ![](./assets/screen_shots/home_page.png) ![](./assets/screen_shots/game_board.png) ![](./assets/screen_shots/result_board.png)
 
-[Live site URL]()
+[Live site URL](https://klara367.github.io/knowledge-quiz/)
 
 
 ## Built with
