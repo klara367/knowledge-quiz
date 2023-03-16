@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Knowledge quiz</title>
+</head>
+<body class="display-grid">
+    <div class="main">
+        <div class="home-page display-grid">
+            <img src="./assets/question.png" alt="light bulb with question mark">
+            <p class="heading fs-900">Knowledge quiz</p>
+            <p class="subheading fs-700">Test your knowledge and learn something new!</p>
+            <label for="questions-amount">Choose number of questions</label>
+            <input class="questions-amount" type="number" value="10" min="1" max="30">
+            <label for="category-options">Choose the category</label>
+            <select class="category-options">
+                <option value="27">Biology</option>
+                <option value="18">Computer</option>
+                <option value="22">Geography</option>
+                <option value="23">History</option>
+                <option value="19">Mathematics</option>
+            </select>
+            <button class="start-btn clr-bg-accent">Start game</button>
+        </div>
+        <div class="game-board">
+            <div>
+                <div class="score-counter display-flex">
+                    <div class="display-flex gap-100">
+                        <p class="question-number clr-txt-accent">1</p>
+                        <p>/</p>
+                        <p class="display-q-amount"></p>
+                    </div>
+                    <div class="display-flex gap-100">
+                        <p class="score">score: </p>
+                        <p class="count-score clr-txt-accent">0</p>
+                    </div>
+                </div>
+            </div>
+            <div class="line"></div>
+            <div class="display-question"></div>
+            <div class="options-btn-wrapper display-flex">
+                <button class="true option" value="True">True</button>
+                <button class="false option" value="False">False</button>
+            </div>
+        </div>
+        <div class="next-btn-wrapper">
+            <button class="next clr-bg-accent" value="next">Next</button>
+        </div>
+
+        <div class="result-board">
+            <img src="./assets/trophy.png" alt="golden trophy">
+            <p class="fs-900">Congratulations!</p>
+            <p class="display-end-result fs-700"></p>
+            <button class="try-again clr-bg-accent">Try again</button>
+        </div>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
